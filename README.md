@@ -1,10 +1,6 @@
 Tornado Validator
 ==================
 
-.. image:: https://badges.gitter.im/Join%20Chat.svg
-   :alt: Join the chat at https://gitter.im/tornadoweb/tornado
-   :target: https://gitter.im/tornadoweb/tornado?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
-
 Tornado Validator is a Python module for data validation.
 
 Usage
@@ -12,7 +8,7 @@ Usage
 
 Here is a simple "Hello, world" example web app for Tornado:
 
-.. code-block:: python
+code-block:: python
 
     class PostHandler(tornado.web.RequestHandler):
     def post(self):
