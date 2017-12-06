@@ -6,11 +6,10 @@ Tornado Validator is a Python module for data validation.
 Usage
 ------------
 
-Here is a simple "Hello, world" example web app for Tornado:
+Here is a simple example:
 
-code-block:: python
-
-    class PostHandler(tornado.web.RequestHandler):
+```python
+class PostHandler(tornado.web.RequestHandler):
     def post(self):
 
         validation_rules = [
@@ -25,5 +24,5 @@ code-block:: python
             json_response(self, data=data)
         else:
             json_response(self, data=validator.errors())
-
+```
 For full example view main.py file
