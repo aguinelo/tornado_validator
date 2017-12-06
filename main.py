@@ -16,7 +16,7 @@ class PostHandler(tornado.web.RequestHandler):
         validation_rules = [
             {"field":"campo1", "type": int, "message": "O campo campo1 deve ser um inteiro."},
             {"field":"campo2", "type": bool, "message": "O campo campo2 deve ser booleano."},
-            {"field":"campo3", "message": "O campo campo3 deve ser informado."}
+            {"field":"campo3", "message": "O campo campo3 deve ser informado."} #required only
         ]
 
         data = tornado.escape.json_decode(self.request.body)
